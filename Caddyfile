@@ -1,0 +1,137 @@
+:8998
+
+# Global encode & security headers
+encode zstd gzip
+
+header {
+    Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+    X-Content-Type-Options "nosniff"
+    X-Frame-Options "DENY"
+    Referrer-Policy "strict-origin-when-cross-origin"
+    Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+    Permissions-Policy "geolocation=(), microphone=(), camera=()"    
+    x-workstation "kwafeLt-s-homelab"
+}
+
+# OPTIONS → plain text
+@options {
+    method OPTIONS
+}
+handle @options {
+    header Content-Type "text/plain"
+    respond "OPTIONS. Nothing to see here, just a breeze passing by." 200
+}
+
+# POST → proxy ke :5000
+@post {
+    method POST
+}
+handle @post {
+    reverse_proxy :5000
+}
+
+# GET → static site
+@get {
+    method GET
+}
+handle @get {
+    # Cache berdasarkan extension
+    @fonts {
+        path_regexp font \.(ttf|woff|woff2|eot|otf)$
+    }
+    handle @fonts {
+        header Cache-Control "public, max-age=7776000, immutable"
+    }
+    @images {
+        path_regexp image \.(gif|ico|jpeg|jpg|png|svg|webp)$
+    }
+    handle @images {
+        header Cache-Control "public, max-age=7776000, immutable"
+    }
+    @css {
+        path_regexp css \.css$
+    }
+    handle @css {
+        # ORIG: header Cache-Control "public, max-age=86400, must-revalidate"
+        header Cache-Control "public, max-age=900, must-revalidate"
+    }
+    @js {
+        path_regexp js \.js$
+    }
+    handle @js {
+        header Cache-Control "public, max-age=900, must-revalidate"
+    }
+    @html {
+        path_regexp html \.(gmi|html|htm|xml)$
+    }
+    handle @html {
+        header Cache-Control "public, max-age=900, must-revalidate"
+    }
+    @json {
+        path_regexp json \.(json|php)$
+    }
+    handle @json {
+        header Cache-Control "no-cache, no-store, must-revalidate"
+    }
+
+    # Root folder untuk static files
+    root * /home/kwafelt/blur.b.io/path/
+
+    # Serve file server
+    file_server
+
+    # Handle semua /gmi/*.gmi
+    @gmiFiles {
+        path_regexp gmi ^/gmi/.*\.gmi$
+    }
+    rewrite @gmiFiles /gemini.htm
+
+    # robots.txt → block semua bot → plain text
+    @robots {
+        path /robots.txt
+    }
+    handle @robots {
+        header Content-Type "text/plain"
+        respond "User-agent: * Disallow: /" 200
+    }
+
+    # Rewrite /old-path ke /new-path
+    @shortcuts {
+        path_regexp shortcuts ^/(capsule|inkwell|memoire|scrawls|session)/?$  
+    }
+    rewrite @shortcuts /biscuit.htm
+
+    rewrite /favicon.ico /transparent.svg
+    rewrite / /biscuit.htm
+}
+
+# Method lain → 405
+@other {
+    not method OPTIONS POST GET
+}
+handle @other {
+    header Content-Type "text/plain"
+    respond ": HTTP 405 Method not allowed." 405
+}
+
+# Custom error pages
+handle_errors {
+    # 404
+    @404 {
+        expression {http.error.status_code} == 404
+    }
+    header @404 {
+        Content-Type "text/plain"
+    }
+    respond @404 ": HTTP 404 Sailed into the void." 404
+
+    # 405
+    @405 {
+        expression {http.error.status_code} == 405
+    }
+    header @405 {
+        Content-Type "text/plain"
+    }
+    respond @405 ": HTTP 405 This action cannot be performed here." 405
+}
+# END-OF-LINE
