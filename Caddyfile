@@ -101,6 +101,12 @@ handle @get {
     }
     rewrite @shortcuts /biscuit.htm
 
+    # SPA fallback level 1 ONLY
+    @level1Fallback {
+        path_regexp level1 ^/(inkwell|scrawls)/[^/]+$
+    }
+    rewrite @level1Fallback /biscuit.htm
+
     rewrite /favicon.ico /transparent.svg
     rewrite / /biscuit.htm
 }
