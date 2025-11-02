@@ -65,7 +65,7 @@ handle @get {
         path_regexp html \.(gmi|html|htm|xml)$
     }
     handle @html {
-        header Cache-Control "public, max-age=900, must-revalidate"
+        header Cache-Control "public, max-age=300, must-revalidate"
     }
     @json {
         path_regexp json \.(json|php)$
