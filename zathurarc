@@ -1,0 +1,87 @@
+# ~/.config/zathura/zathurarc
+# Zathura configuration file
+# See `man zathurarc` for reference
+
+##### Interface (Girara) #####
+
+set font "IBM Plex Mono Medium 9"
+set n-completion-items 10
+set guioptions "s"
+set window-width 1080
+set window-height 696
+
+# Colors: deep black background + peach foreground
+set default-bg "#000a05"
+set default-fg "#ffc7b6"
+
+set completion-bg "#000a05"
+set completion-fg "#ffc7b6"
+set completion-group-bg "#000a05"
+set completion-group-fg "#ffc7b6"
+set completion-highlight-bg "#000a05"
+set completion-highlight-fg "#ffc7b6"
+
+set inputbar-bg "#000a05"
+set inputbar-fg "#ffc7b6"
+set statusbar-bg "#000a05"
+set statusbar-fg "#ffc7b6"
+
+set tabbar-bg "#000a05"
+set tabbar-fg "#ffc7b6"
+set tabbar-focus-bg "#000a05"
+set tabbar-focus-fg "#ffc7b6"
+
+set notification-bg "#000a05"
+set notification-fg "#ffc7b6"
+set notification-error-bg "#000a05"
+set notification-error-fg "#ffc7b6"
+set notification-warning-bg "#000a05"
+set notification-warning-fg "#ffc7b6"
+
+##### Behavior #####
+
+# Title bar options
+set window-title-basename false
+set window-title-page true
+set statusbar-basename false
+
+# Page layout and zoom
+set adjust-open "best-fit"
+set pages-per-row 1
+set zoom-step 9
+set zoom-max 55
+set zoom-min 35
+
+# Scrolling
+set scroll-page-aware true
+set smooth-scroll true
+set scroll-full-overlap 0.01
+set scroll-step 90
+
+# Rendering
+set render-loading false
+
+##### Recolor (Dark Mode) #####
+
+set recolor false
+set recolor-lightcolor "#ffc7b6"
+set recolor-darkcolor "#000a05"
+set recolor-reverse-video true
+set recolor-keephue true
+
+##### Keybindings #####
+
+# Toggle fullscreen
+unmap f
+map f toggle_fullscreen
+map [fullscreen] f toggle_fullscreen
+
+# Navigation
+map <Left> navigate previous
+map <Right> navigate next
+
+# Quit
+map q quit
+map <Escape> quit
+
+# EOF
