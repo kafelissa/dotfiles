@@ -1,31 +1,30 @@
 #EXTM3U
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/kafelissa/dotfiles/refs/heads/main/mibox4.xml"
 
-#RTMKlik
-
-#EXTINF:-1 tvg-id="tv1" tvg-name="TV1" group-title="RTM",TV1
+#EXTINF:-1 tvg-id="tv1" tvg-name="TV1" group-title="RTMKlik",TV1
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/
 https://d25tgymtnqzu8s.cloudfront.net/main/A0jyR3/master.m3u8?id=1|referer=https://rtmklik.rtm.gov.my/
 
-#EXTINF:-1 tvg-id="tv2" tvg-name="TV2" group-title="RTM",TV2
+#EXTINF:-1 tvg-id="tv2" tvg-name="TV2" group-title="RTMKlik",TV2
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/
 https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/playlist.m3u8?id=2|referer=https://rtmklik.rtm.gov.my/
 
-#EXTINF:-1 tvg-id="okey" tvg-name="Okey" group-title="RTM",Okey
+#EXTINF:-1 tvg-id="okey" tvg-name="Okey" group-title="RTMKlik",Okey
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/
 https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=3|referer=https://rtmklik.rtm.gov.my/
 
-#EXTINF:-1 tvg-id="beritartm" tvg-name="Berita RTM" group-title="RTM",Berita RTM
+#EXTINF:-1 tvg-id="beritartm" tvg-name="Berita RTM" group-title="RTMKlik",Berita RTM
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/
 https://d25tgymtnqzu8s.cloudfront.net/main/VPxRb6/master.m3u8?id=5|referer=https://rtmklik.rtm.gov.my/
 
-#EXTINF:-1 tvg-id="sukanrtm" tvg-name="Sukan RTM" group-title="RTM",Sukan RTM
+#EXTINF:-1 tvg-id="sukanrtm" tvg-name="Sukan RTM" group-title="RTMKlik",Sukan RTM
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/
 https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/playlist.m3u8?id=4|referer=https://rtmklik.rtm.gov.my/
 
-#EXTINF:-1 tvg-id="tv6" tvg-name="TV6" group-title="RTM",TV6
+#EXTINF:-1 tvg-id="tv6" tvg-name="TV6" group-title="RTMKlik",TV6
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/
 https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/playlist.m3u8?id=6|referer=https://rtmklik.rtm.gov.my/
 
-#EXTINF:-1 tvg-id="rtmworld" tvg-name="RTM World" group-title="RTM",RTM World
+#EXTINF:-1 tvg-id="rtmworld" tvg-name="RTM World" group-title="RTMKlik",RTM World
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/
 https://d25tgymtnqzu8s.cloudfront.net/event/smil:event1/playlist.m3u8?id=16|referer=https://rtmklik.rtm.gov.my/
