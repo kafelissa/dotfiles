@@ -28,3 +28,31 @@ https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/playlist.m3u8?id=6|referer=https:
 #EXTINF:-1 tvg-id="rtmworld" tvg-name="RTM World" group-title="RTMKlik",RTM World
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/
 https://d25tgymtnqzu8s.cloudfront.net/event/smil:event1/playlist.m3u8?id=16|referer=https://rtmklik.rtm.gov.my/
+
+#EXTINF:-1 tvg-id="roll" tvg-name="RTM ROLL" group-title="RTMKlik",RTM ROLL
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/live/roll
+https://d1sq2slp9afh7o.cloudfront.net/smil:roll/playlist.m3u8?id=24095|referer=https://rtmklik.rtm.gov.my/
+
+#EXTINF:-1 tvg-id="snap" tvg-name="RTM SNAP" group-title="RTMKlik",RTM SNAP
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/live/snap
+https://d1sq2slp9afh7o.cloudfront.net/smil:snap/playlist.m3u8?id=24099|referer=https://rtmklik.rtm.gov.my/
+
+#EXTINF:-1 tvg-id="apetito" tvg-name="RTM APETITO" group-title="RTMKlik",RTM APETITO
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/live/apetito
+https://d1sq2slp9afh7o.cloudfront.net/smil:apetito/playlist.m3u8?id=24100|referer=https://rtmklik.rtm.gov.my/
+
+#EXTINF:-1 tvg-id="lead" tvg-name="RTM LEAD" group-title="RTMKlik",RTM LEAD
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/live/lead
+https://d1sq2slp9afh7o.cloudfront.net/smil:lead/playlist.m3u8?id=24101|referer=https://rtmklik.rtm.gov.my/
+
+#EXTINF:-1 tvg-id="aura" tvg-name="RTM AURA" group-title="RTMKlik",RTM AURA
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/live/aura
+https://d1sq2slp9afh7o.cloudfront.net/smil:aura/playlist.m3u8?id=24102|referer=https://rtmklik.rtm.gov.my/
+
+#EXTINF:-1 tvg-id="fitrah" tvg-name="RTM FITRAH" group-title="RTMKlik",RTM FITRAH
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/live/fitrah
+https://d1sq2slp9afh7o.cloudfront.net/smil:fitrah/playlist.m3u8?id=24103|referer=https://rtmklik.rtm.gov.my/
+
+#EXTINF:-1 tvg-id="jr" tvg-name="RTM JR." group-title="RTMKlik",RTM JR.
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/live/jr.
+https://d1sq2slp9afh7o.cloudfront.net/smil:jr/playlist.m3u8?id=24104|referer=https://rtmklik.rtm.gov.my/
