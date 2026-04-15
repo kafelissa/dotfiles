@@ -56,3 +56,19 @@ https://d1sq2slp9afh7o.cloudfront.net/smil:fitrah/playlist.m3u8?id=24103|referer
 #EXTINF:-1 tvg-id="jr" tvg-name="RTM JR." group-title="RTMKlik",RTM JR.
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/live/jr.
 https://d1sq2slp9afh7o.cloudfront.net/smil:jr/playlist.m3u8?id=24104|referer=https://rtmklik.rtm.gov.my/
+
+#EXTINF:-1 tvg-id="aljazeera" tvg-name="Al Jazeera English" group-title="aljazeera",Al Jazeera English
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www.aljazeera.com/video/live
+https://live-hls-web-aje-gcp.thehlive.com/AJE/index.m3u8|referer=https://www.aljazeera.com/video/live
+
+#EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg Asia" group-title="bloomberg",Bloomberg Asia
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www.bloomberg.com/live/asia
+https://www.bloomberg.com/media-manifest/streams/asia.m3u8|referer=https://www.bloomberg.com/live/asia
+
+#EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg Originals" group-title="bloomberg",Bloomberg Originals
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www.bloomberg.com/live/originals
+https://www.bloomberg.com/media-manifest/streams/qt.m3u8|referer=https://www.bloomberg.com/live/originals
+
+#EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg Radio" group-title="bloomberg",Bloomberg Radio
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www.bloomberg.com/live/radio
+https://www.bloomberg.com/media-manifest/streams/radio-national-video.m3u8|referer=https://www.bloomberg.com/live/radio
