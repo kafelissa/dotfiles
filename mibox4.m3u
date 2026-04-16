@@ -57,9 +57,31 @@ https://d1sq2slp9afh7o.cloudfront.net/smil:fitrah/playlist.m3u8?id=24103|referer
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://rtmklik.rtm.gov.my/live/jr.
 https://d1sq2slp9afh7o.cloudfront.net/smil:jr/playlist.m3u8?id=24104|referer=https://rtmklik.rtm.gov.my/
 
+#EXTINF:-1 tvg-id="channelnewsasia" tvg-name="ChannelNewsAsia" group-title="channelnewsasia",ChannelNewsAsia
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www.channelnewsasia.com/watch
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8?|referer=https://www.channelnewsasia.com/watch
+
+# https://www.cbsnews.com/live/
+# https://dai.google.com/linear/hls/pa/event/Sid4xiTQTkCT1SLu6rjUSQ/stream/58e77187-680b-42b2-9724-00a67124aec0:BRU/master.m3u8
+# CBS News 247
+
 #EXTINF:-1 tvg-id="aljazeera" tvg-name="Al Jazeera English" group-title="aljazeera",Al Jazeera English
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www.aljazeera.com/video/live
 https://live-hls-web-aje-gcp.thehlive.com/AJE/index.m3u8?|referer=https://www.aljazeera.com/video/live
+
+# Al Arabiya English Livestream
+
+#EXTINF:-1 tvg-id="alarabiya" tvg-name="Al Arabiya English" group-title="alarabiapublish",Al Arabiya English
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://english.alarabiya.net/live-stream
+https://live.alarabiya.net/alarabiapublish/english/playlist_dvr.m3u8?|referer=https://english.alarabiya.net/live-stream
+
+#EXTINF:-1 tvg-id="alarabiya" tvg-name="Al Arabiya AR" group-title="alarabiapublish",Al Arabiya AR
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://english.alarabiya.net/live-stream
+https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8?|referer=https://english.alarabiya.net/live-stream
+
+#EXTINF:-1 tvg-id="alhadath" tvg-name="Al Arabiya Al Hadath" group-title="alarabiapublish",Al Arabiya Al Hadath
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://english.alarabiya.net/live-stream
+https://live.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8?|referer=https://english.alarabiya.net/live-stream
 
 #EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg Asia" group-title="bloomberg",Bloomberg Asia
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www.bloomberg.com/live/asia
@@ -72,3 +94,7 @@ https://www.bloomberg.com/media-manifest/streams/qt.m3u8?|referer=https://www.bl
 #EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg Radio" group-title="bloomberg",Bloomberg Radio
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www.bloomberg.com/live/radio
 https://www.bloomberg.com/media-manifest/streams/radio-national-video.m3u8?|referer=https://www.bloomberg.com/live/radio
+
+#EXTINF:-1 tvg-id="nhkworld" tvg-name="NHK WORLD-JAPAN" group-title="nhkworld",NHK WORLD-JAPAN
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www3.nhk.or.jp/nhkworld/en/live_tv/
+https://media-tyo.hls.nhkworld.jp/hls/w/live/master.m3u8?|referer=https://www3.nhk.or.jp/nhkworld/en/live_tv/
