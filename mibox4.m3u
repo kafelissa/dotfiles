@@ -83,6 +83,10 @@ https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8?|referer
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://english.alarabiya.net/live-stream
 https://live.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8?|referer=https://english.alarabiya.net/live-stream
 
+#EXTINF:-1 tvg-id="trtworld" tvg-name="TRT World" group-title="trtworld",TRT World
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www.trtworld.com/
+https://tv-trtworld.medya.trt.com.tr/master.m3u8?|referer=https://www.trtworld.com/
+
 #EXTINF:-1 tvg-id="bloomberg" tvg-name="Bloomberg Asia" group-title="bloomberg",Bloomberg Asia
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Mozilla/5.0&Referer=https://www.bloomberg.com/live/asia
 https://www.bloomberg.com/media-manifest/streams/asia.m3u8?|referer=https://www.bloomberg.com/live/asia
